@@ -1,5 +1,4 @@
 # Node.js comet module (Beta!)
-Demo: http://chat.nodejs.ru
 
 Use:
 	node ./server.js
