@@ -20,7 +20,7 @@ Usage:
 		// handler
 	});
 	
-	client.connect({text: 'Create data (unnessusary)'});
+	client.connect({text: 'Create data (unnecessary)'});
 	client.send({text: 'Sent data'});
 	
 ## Server side
