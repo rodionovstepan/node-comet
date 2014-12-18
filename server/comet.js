@@ -39,7 +39,7 @@ exports.server = function(interval) {
                 sendData(this.handle, this.session, 'callback', { f: true, d: data });
                 this.open = false;
             } else {
-                sys.p('FAULT');
+                sys.p('SEND FAULT');
                 this.buffer.push(data);
             }
         };
@@ -52,8 +52,8 @@ exports.server = function(interval) {
             }
 
             var self = this;
-            this.timeoutHandler = setTimeout(function() { // disconnect
-                sys.p('DICONNECT');
+            this.timeoutHandler = setTimeout(function() {
+                sys.p('DISCONNECT');
                 sys.p(connections[self.session]);
 
                 if (connections[self.session]) {
